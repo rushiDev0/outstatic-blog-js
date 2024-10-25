@@ -1,6 +1,6 @@
 {
-  "commit": "5b8093ff8a71f5ae80c690a75090b9983f2a2a9e",
-  "generated": "2024-10-25T08:13:21.206Z",
+  "commit": "5555f23cb780be02ee82041663819e16dbc9dc32",
+  "generated": "2024-10-25T08:13:38.976Z",
   "metadata": [
     {
       "__outstatic": {
@@ -78,7 +78,7 @@
     },
     {
       "__outstatic": {
-        "commit": "5b8093ff8a71f5ae80c690a75090b9983f2a2a9e",
+        "commit": "5555f23cb780be02ee82041663819e16dbc9dc32",
         "hash": "1837811124",
         "path": "outstatic/content/posts/third-blog.md"
       },
