@@ -22,7 +22,16 @@
       "fieldType": "Tags",
       "dataType": "array",
       "title": "Tags",
-      "values": []
+      "values": [
+        {
+          "value": "tagA",
+          "label": "tag a"
+        },
+        {
+          "value": "tabb",
+          "label": "tabb"
+        }
+      ]
     },
     "category": {
       "required": true,
@@ -30,7 +39,12 @@
       "fieldType": "Tags",
       "dataType": "array",
       "title": "Category",
-      "values": []
+      "values": [
+        {
+          "value": "catA",
+          "label": "cat a"
+        }
+      ]
     },
     "canonicalUrl": {
       "required": false,
