@@ -1,11 +1,11 @@
 {
-  "commit": "2b7751dcb81bfa654401364ae2aeef62b489ee4f",
-  "generated": "Fri, 25 Oct 2024 05:19:35 GMT",
+  "commit": "7f9d8ecc6fe8f8a499cb9e1bfca3131b77e4333d",
+  "generated": "Fri, 25 Oct 2024 05:26:24 GMT",
   "metadata": [
     {
       "__outstatic": {
         "commit": "04a3ce931914e686e256d67350410a459be76b45",
-        "hash": "2620810125",
+        "hash": "441290405",
         "path": "outstatic/content/posts/my-first-blog.md"
       },
       "author": {
@@ -26,7 +26,7 @@
       "metaTitle": "test meta title",
       "publishedAt": "2024-10-25T05:48:06.545Z",
       "slug": "my-first-blog",
-      "status": "draft",
+      "status": "published",
       "tags": [
         {
           "label": "tag a",
