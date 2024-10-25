@@ -1,6 +1,6 @@
 ---
 title: 'my first blog'
-status: 'draft'
+status: 'published'
 author:
   name: 'Rushikesh Shinde'
   picture: '/images/screenshot-k4NT.png'
