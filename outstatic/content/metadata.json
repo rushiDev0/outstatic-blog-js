@@ -1,0 +1,43 @@
+{
+  "commit": "7f9d8ecc6fe8f8a499cb9e1bfca3131b77e4333d",
+  "generated": "Fri, 25 Oct 2024 05:26:24 GMT",
+  "metadata": [
+    {
+      "__outstatic": {
+        "commit": "04a3ce931914e686e256d67350410a459be76b45",
+        "hash": "441290405",
+        "path": "outstatic/content/posts/my-first-blog.md"
+      },
+      "author": {
+        "name": "Rushikesh Shinde",
+        "picture": "/images/screenshot-k4NT.png"
+      },
+      "canonicalUrl": "https://outstatic-blogs-rushi.vercel.app/blog/the-joke-tax-chronicles",
+      "category": [
+        {
+          "label": "cat a",
+          "value": "catA"
+        }
+      ],
+      "collection": "posts",
+      "coverImage": "/images/5-ways-to-maximize-roi-AwND.webp",
+      "description": "Once upon a time, in a far-off land, there was a very lazy king who spent all day lounging on his throne. One day, his advisors came to him with a problem: the kingdom was running out of money.",
+      "metaDescription": "test meta desc",
+      "metaTitle": "test meta title",
+      "publishedAt": "2024-10-25T05:48:06.545Z",
+      "slug": "my-first-blog",
+      "status": "published",
+      "tags": [
+        {
+          "label": "tag a",
+          "value": "tagA"
+        },
+        {
+          "label": "tabb",
+          "value": "tabb"
+        }
+      ],
+      "title": "my first blog"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "title": "posts",
+  "type": "object",
+  "properties": {
+    "metaTitle": {
+      "required": true,
+      "description": "",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Meta title"
+    },
+    "metaDescription": {
+      "required": true,
+      "description": "",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Meta Description"
+    },
+    "tags": {
+      "required": true,
+      "description": "",
+      "fieldType": "Tags",
+      "dataType": "array",
+      "title": "Tags",
+      "values": [
+        {
+          "value": "tagA",
+          "label": "tag a"
+        },
+        {
+          "value": "tabb",
+          "label": "tabb"
+        }
+      ]
+    },
+    "category": {
+      "required": true,
+      "description": "",
+      "fieldType": "Tags",
+      "dataType": "array",
+      "title": "Category",
+      "values": [
+        {
+          "value": "catA",
+          "label": "cat a"
+        }
+      ]
+    },
+    "canonicalUrl": {
+      "required": false,
+      "description": "Please add absolute canonical url path if the url is other than post url",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "CanonicalURL"
+    }
+  }
+}
