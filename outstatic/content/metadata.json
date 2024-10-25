@@ -1,6 +1,6 @@
 {
-  "commit": "7f9d8ecc6fe8f8a499cb9e1bfca3131b77e4333d",
-  "generated": "Fri, 25 Oct 2024 05:26:24 GMT",
+  "commit": "bd3aad2af003664bb4af66956c37f98241fb7350",
+  "generated": "2024-10-25T08:07:44.922Z",
   "metadata": [
     {
       "__outstatic": {
@@ -38,6 +38,43 @@
         }
       ],
       "title": "my first blog"
+    },
+    {
+      "__outstatic": {
+        "commit": "bd3aad2af003664bb4af66956c37f98241fb7350",
+        "hash": "2075378693",
+        "path": "outstatic/content/posts/second-blog.md"
+      },
+      "author": {
+        "name": "Rushikesh Shinde",
+        "picture": "https://avatars.githubusercontent.com/u/143994918?v=4"
+      },
+      "canonicalUrl": "",
+      "category": [
+        {
+          "label": "cat b",
+          "value": "catB"
+        }
+      ],
+      "collection": "posts",
+      "coverImage": "/images/0cipxvumhje-gzOT.jpg",
+      "description": "Once upon a time, in a far-off land, there was a very lazy king who spent all day lounging on his throne. One day, his advisors came to him with a problem: the kingdom was running out of money.",
+      "metaDescription": "test meta desc",
+      "metaTitle": "test meta title",
+      "publishedAt": "2024-10-25T08:38:24.929Z",
+      "slug": "second-blog",
+      "status": "published",
+      "tags": [
+        {
+          "label": "tabb",
+          "value": "tabb"
+        },
+        {
+          "label": "tagd",
+          "value": "tagd"
+        }
+      ],
+      "title": "second blog"
     }
   ]
 }
