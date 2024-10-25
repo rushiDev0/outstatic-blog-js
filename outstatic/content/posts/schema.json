@@ -30,6 +30,10 @@
         {
           "value": "tabb",
           "label": "tabb"
+        },
+        {
+          "value": "tagd",
+          "label": "tagd"
         }
       ]
     },
@@ -43,6 +47,10 @@
         {
           "value": "catA",
           "label": "cat a"
+        },
+        {
+          "value": "catB",
+          "label": "cat b"
         }
       ]
     },
