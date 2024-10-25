@@ -1,0 +1,13 @@
+{
+  "title": "posts",
+  "type": "object",
+  "properties": {
+    "metaTitle": {
+      "required": true,
+      "description": "",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Meta title"
+    }
+  }
+}
