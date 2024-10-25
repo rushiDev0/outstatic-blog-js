@@ -1,37 +1,35 @@
-// Import necessary dependencies
-import { MDXRemote } from 'next-mdx-remote';
-import { useMemo } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+import React from 'react';
+import ReactMarkdown from 'react-markdown';
+import Link from "next/link";
+import {Table, TableBody, TableCell, TableHeader, TableHeaderCell, TableRow} from "@/components/ui/Table";
+import remarkGfm from "remark-gfm";
 
-// Define a custom component for handling MDX content
-const MDXComponents = {
-    // Custom Link component
-    a: ({ href, children }) => (
-        <Link href={href} passHref>
-            <a>{children}</a>
-        </Link>
-    ),
-
-    // Custom Image component
-    img: (props) => (
-        <Image {...props} alt={props.alt || 'Image'} layout="responsive" />
-    ),
-};
-
-// Main component to render MDX content
-export default function MdxRenderer({ mdxString }) {
-    // Memoize the MDXRemote for performance
-    const mdxSource = useMemo(() => {
-        return {
-            compiledSource: mdxString,
-            // Add any additional options if needed
-        };
-    }, [mdxString]);
-
+const MarkdownToHtml = ({ markdown, customComponents }) => {
     return (
         <div>
-            <MDXRemote {...mdxSource} components={MDXComponents} />
+            <ReactMarkdown components={customComponents} remarkPlugins={[remarkGfm]}>
+                {markdown}
+            </ReactMarkdown>
         </div>
     );
 };
+
+export default MarkdownToHtml;
+
+export const mdxCustomComponents = {
+    // h1: ({ children }) => <h1 style={{ color: 'blue' }}>{children}</h1>,
+    // p: ({ children }) => <p style={{ fontSize: '18px' }}>{children}</p>,
+    a: ({children, href}) => <Link href={href} target={isInternalUrl(href) ? '_self' : '_blank'}>{children}</Link>,
+    img: ({src, alt}) => <span className="inline-flex justify-center items-center w-full"><img src={src} alt={alt} className="max-w-[30rem] aspect-auto"/></span>,
+    table: Table,
+    thead: TableHeader,
+    tbody: TableBody,
+    tr: TableRow,
+    th: TableHeaderCell,
+    td: TableCell,
+};
+
+const isInternalUrl = (url) => {
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+    return url.startsWith(baseUrl) || url.startsWith('/');
+}

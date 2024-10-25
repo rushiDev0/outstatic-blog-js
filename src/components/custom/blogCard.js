@@ -1,7 +1,9 @@
 import React from 'react';
 import DateFormatter from "@/components/custom/DateFormatter";
+import Link from "next/link";
 
 export default function BlogCard({title, slug, description, coverImage, publishedAt, tags}) {
+    if(!title) return null;
     return (
         <Link href={`/blog/${slug}`} className="group flex flex-col p-4 gap-4">
             <div className="w-full aspect-video overflow-hidden">

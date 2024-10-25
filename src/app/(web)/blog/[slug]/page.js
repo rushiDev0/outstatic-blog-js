@@ -1,13 +1,13 @@
 import React from 'react';
 import DateFormatter from "@/components/custom/DateFormatter";
 import {CalendarDays} from "lucide-react";
-import MdxRenderer from "@/components/custom/MarkdownRenderer";
+import MarkdownToHtml, {mdxCustomComponents} from "@/components/custom/MarkdownRenderer";
 import {notFound} from "next/navigation";
 import {getDocumentSlugs, load} from "outstatic/server";
 import {absoluteUrl, canonicalUrL} from "@/lib/utils";
 
-export default function SingleBlog({params}) {
-    const post = {}
+export default async function SingleBlog({params}) {
+    const post = await getData(params.slug);
     return (
         <div>
             <section className="relative w-full bg-cover bg-center bg-no-repeat"
@@ -33,7 +33,7 @@ export default function SingleBlog({params}) {
             <section className="py-10">
                 <div className="container">
                     <div className="w-full 2xl:prose-2xl xl:prose-xl lg:prose-lg prose xs:prose-sm min-w-full">
-                        <MdxRenderer mdxString={post.content}/>
+                        <MarkdownToHtml customComponents={mdxCustomComponents} markdown={post.content}/>
                     </div>
                 </div>
             </section>
@@ -43,8 +43,9 @@ export default function SingleBlog({params}) {
 
 
 
-export async function generateMetadata(params) {
-    const post = await getData(params);
+export async function generateMetadata({params}) {
+    const slug = params.slug;
+    const post = await getData(slug);
 
     if (!post) {
         return {};
@@ -92,13 +93,13 @@ export async function generateStaticParams() {
     return posts.map((slug) => ({ slug }));
 }
 
-async function getData({params}) {
+async function getData(slug) {
     const db = await load();
     const post =  await db
         .find(
         {
             collection: "posts",
-            slug: params.slug,
+            slug: slug,
             status: 'published',
         },
             [
