@@ -8,6 +8,13 @@
       "fieldType": "String",
       "dataType": "string",
       "title": "Meta title"
+    },
+    "metaDescription": {
+      "required": true,
+      "description": "",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Meta Description"
     }
   }
 }
