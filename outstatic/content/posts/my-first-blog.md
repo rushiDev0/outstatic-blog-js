@@ -1,5 +1,5 @@
 ---
-title: 'my first blog'
+title: 'first blog'
 status: 'published'
 author:
   name: 'Rushikesh Shinde'
@@ -25,7 +25,7 @@ The king thought long and hard, and finally came up with [**a brilliant plan**](
 
 ### **The Joke Tax**
 
-[**![My Img](https://outstatic-blogs-rushi.vercel.app/images/banner_bg_desk-QxNz.webp)**](/blog/how-ai-is-transforming-digital-marketing)
+![](/images/map-MyNj.svg)
 
 The king's subjects were not amused. They grumbled and complained, but the king was firm:
 
