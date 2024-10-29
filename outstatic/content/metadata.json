@@ -1,7 +1,44 @@
 {
-  "commit": "452b342a29558ca297ed8649e4b34a0edcb5b1bb",
-  "generated": "Fri, 25 Oct 2024 08:15:38 GMT",
+  "commit": "40a1c385df875ed694230b763b038c6aea513068",
+  "generated": "Tue, 29 Oct 2024 05:24:30 GMT",
   "metadata": [
+    {
+      "__outstatic": {
+        "commit": "dda9c908d369469c6bfe68eb588f8b4542bd16e0",
+        "hash": "441290405",
+        "path": "outstatic/content/posts/my-first-blog.md"
+      },
+      "author": {
+        "name": "Rushikesh Shinde",
+        "picture": "/images/screenshot-k4NT.png"
+      },
+      "canonicalUrl": "https://outstatic-blogs-rushi.vercel.app/blog/the-joke-tax-chronicles",
+      "category": [
+        {
+          "label": "cat a",
+          "value": "catA"
+        }
+      ],
+      "collection": "posts",
+      "coverImage": "/images/5-ways-to-maximize-roi-AwND.webp",
+      "description": "Once upon a time, in a far-off land, there was a very lazy king who spent all day lounging on his throne. One day, his advisors came to him with a problem: the kingdom was running out of money.",
+      "metaDescription": "test meta desc",
+      "metaTitle": "test meta title",
+      "publishedAt": "2024-10-25T05:48:06.545Z",
+      "slug": "my-first-blog",
+      "status": "published",
+      "tags": [
+        {
+          "label": "tag a",
+          "value": "tagA"
+        },
+        {
+          "label": "tabb",
+          "value": "tabb"
+        }
+      ],
+      "title": "my first blog"
+    },
     {
       "__outstatic": {
         "commit": "36372983c2c8d511fc7e7926d38d2c82f6ff6e39",
@@ -38,43 +75,6 @@
         }
       ],
       "title": "third blog"
-    },
-    {
-      "__outstatic": {
-        "commit": "04a3ce931914e686e256d67350410a459be76b45",
-        "hash": "441290405",
-        "path": "outstatic/content/posts/my-first-blog.md"
-      },
-      "author": {
-        "name": "Rushikesh Shinde",
-        "picture": "/images/screenshot-k4NT.png"
-      },
-      "canonicalUrl": "https://outstatic-blogs-rushi.vercel.app/blog/the-joke-tax-chronicles",
-      "category": [
-        {
-          "label": "cat a",
-          "value": "catA"
-        }
-      ],
-      "collection": "posts",
-      "coverImage": "/images/5-ways-to-maximize-roi-AwND.webp",
-      "description": "Once upon a time, in a far-off land, there was a very lazy king who spent all day lounging on his throne. One day, his advisors came to him with a problem: the kingdom was running out of money.",
-      "metaDescription": "test meta desc",
-      "metaTitle": "test meta title",
-      "publishedAt": "2024-10-25T05:48:06.545Z",
-      "slug": "my-first-blog",
-      "status": "published",
-      "tags": [
-        {
-          "label": "tag a",
-          "value": "tagA"
-        },
-        {
-          "label": "tabb",
-          "value": "tabb"
-        }
-      ],
-      "title": "my first blog"
     },
     {
       "__outstatic": {
